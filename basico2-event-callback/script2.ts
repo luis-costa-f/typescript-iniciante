@@ -8,11 +8,11 @@ interface INotebook {
     preco: number;
 }
 
-async function handleData() {
+async function handleData1() {
     const notebook = await getData<INotebook>(
         'https://api.origamid.dev/json/notebook.json',
     );
     console.log(notebook);
 }
 
-handleData();
+handleData1();
