@@ -12,7 +12,7 @@ function checkInterface(obj, key) {
         return false;
     }
 }
-async function handleData() {
+async function handleData2() {
     const jogo = await fetchData('/jogo.json');
     if (checkInterface(jogo, 'desenvolvedora')) {
         console.log(jogo);
@@ -22,4 +22,4 @@ async function handleData() {
         console.log(livro);
     }
 }
-handleData();
+handleData2();

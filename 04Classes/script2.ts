@@ -26,7 +26,7 @@ function checkInterface<T>(obj: unknown, key: keyof T): obj is T {
     }
 }
 
-async function handleData() {
+async function handleData2() {
     const jogo = await fetchData('/jogo.json');
     if (checkInterface<Jogo>(jogo, 'desenvolvedora')) {
         console.log(jogo);
@@ -38,4 +38,4 @@ async function handleData() {
     }
 }
 
-handleData();
+handleData2();
